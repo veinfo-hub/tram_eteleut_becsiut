@@ -77,10 +77,10 @@
     <img src="tram.jpg" alt="Tram header">
 </div>
 
-<h2>Infopark → Kelenföld</h2>
+<h2>Etele ut/Fehérvári út → Kelenföld</h2>
 <div id="list-kelenfold" class="list">Betöltés…</div>
 
-<h2>Infopark → Bécsi út</h2>
+<h2>Etele ut/Fehérvári út → Bécsi út</h2>
 <div id="list-becsi" class="list">Betöltés…</div>
 
 <div class="updated" id="updated"></div>
@@ -134,8 +134,8 @@ async function loadDirection(stopId, elementId) {
 }
 
 async function loadAll() {
-    await loadDirection("BKK_066451", "list-kelenfold"); // Kelenföld irány
-    await loadDirection("BKK_066452", "list-becsi");      // Bécsi út irány
+    await loadDirection("BKK_066459", "list-kelenfold"); // Kelenföld irány
+    await loadDirection("BKK_066460", "list-becsi");      // Bécsi út irány
 
     document.getElementById("updated").textContent =
         "Frissítve: " + new Date().toLocaleTimeString("hu-HU");
@@ -147,3 +147,4 @@ setInterval(loadAll, 20000);
 
 </body>
 </html>
+
